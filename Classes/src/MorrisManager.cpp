@@ -117,7 +117,7 @@ void MorrisManager::Update()
 		}
 	} else if (PlayerWhite.PiecesRemaining() < 3 || PlayerWhite.HasLost()) {		//  Check win conditions for white.
 		runState = BLACKWIN;
-		if (PlayerBlack.PiecesRemaining() < 3) {
+		if (PlayerWhite.PiecesRemaining() < 3) {
 			phase = Player::CAPTUREWIN;
 		} else {
 			phase = Player::TRAPWIN;

@@ -38,7 +38,7 @@ private:
 	
 	void DisplayText();										//  Display relevant text, dependant on game State and Phase
 	
-	Player PlayerWhite;									
+	Player PlayerWhite;								
 	Player PlayerBlack;
 	GameState runState;
 	Player::GamePhase phase;

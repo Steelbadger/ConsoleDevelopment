@@ -523,9 +523,9 @@ bool Player::CheckTurnMillCreation()
 	
 	//  Uses first and secondMillUsed only check the mills of the newly placed piece
 
-	if (gameBoard->mills[firstMillUsed][0]->GetState() == gameBoard->mills[firstMillUsed][1]->GetState()			//  Check first mill to find it it is 
+	if (gameBoard->mills[firstMillUsed][0]->GetState() == gameBoard->mills[firstMillUsed][1]->GetState()			//  Check first mill to find if it is 
 		&& gameBoard->mills[firstMillUsed][1]->GetState() == gameBoard->mills[firstMillUsed][2]->GetState())		//  a potential mill (all positions have same
-	{																												//  state (may be UNUSED)
+	{																												//  state (may be UNUSED))
 
 		if (playerColour == gameBoard->mills[firstMillUsed][0]->GetState()){					//  Check that the common state of the mill matches the players
 			firstMillUsed = -1;																	//  colour property
