@@ -105,6 +105,10 @@ void MorrisManager::Update()
 		cout << "SetPads to use just Pad0" << endl;							//  Sets controls to hotseat mode even if there are two pads.
 		SetPads(1);
 	}
+	if ((pad[0].buttons & PAD_L2) && (pad[0].buttons & PAD_R2)) {			//  Take pretty pictures.
+		cout << "Pretty Picture incoming!" << endl;							
+		SPS2Manager.ScreenShot();
+	}	
 	PlayerBlack.CheckActuators();				//  Check the the actuators of the player's active pad
 	PlayerWhite.CheckActuators();				//  This handles turning the actuators off after a set time.
 		
